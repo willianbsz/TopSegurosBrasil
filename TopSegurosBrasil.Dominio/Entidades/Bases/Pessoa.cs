@@ -1,6 +1,6 @@
 ﻿namespace TopSegurosBrasil.Dominio.Entidades.Bases
 {
-    public class Pessoa
+    public class  Pessoa
     {
         public Pessoa(string nome, string cPF, string email, DateTime dataNasc, Endereco endereco)
         {

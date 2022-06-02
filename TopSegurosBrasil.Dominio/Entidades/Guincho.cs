@@ -2,9 +2,9 @@
 
 namespace TopSegurosBrasil.Dominio.Entidades
 {
-    public class Guincheiro : Motorista
+    public class Guincho : Motorista
     {
-        public Guincheiro(Pessoa dadosPessoais, Veiculo veiculo, ContaBancaria dadosbancarios, double saldoareceber) : base(dadosPessoais, veiculo)
+        public Guincho(Pessoa dadosPessoais, Veiculo veiculo, ContaBancaria dadosbancarios, double saldoareceber) : base(dadosPessoais, veiculo)
         {
             DadosBancarios = dadosbancarios;
             SaldoAReceber = saldoareceber;

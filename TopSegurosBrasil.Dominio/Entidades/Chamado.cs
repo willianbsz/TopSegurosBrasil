@@ -14,16 +14,17 @@ namespace TopSegurosBrasil.Dominio.Entidades
             Status = StatusChamado.SolicitacaoEmAndamento;
             LocalOcorrencia = local;
         }
+
         public Cliente Requisitante { get; }
         public Endereco LocalOcorrencia { get; }
-        public Guincheiro? Guincho { get; private set; }
+        public Guincho? Guincho { get; private set; }
         public StatusChamado Status { get; private set; }
         public DateTime DataSolicitacao { get; }
         public DateTime DataResgate { get; private set; }
         public DateTime DataFinalizacao { get; private set; }
 
 
-        public void AtribuirGuincho(Guincheiro guincho)
+        public void AtribuirGuincho(Guincho guincho)
         {
             Guincho = guincho;
             Status = StatusChamado.AguardandoGuincho;

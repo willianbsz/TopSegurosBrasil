@@ -2,14 +2,14 @@
 
 namespace TopSegurosBrasil.Dominio.Strategy
 {
-    public static class CoberturaSeguroStrategy
+    public static class ValorSeguroStrategy
     {
-        static readonly Dictionary<TipoSeguro, List<string>> CoberturaPorSeguro = new()
+        static readonly Dictionary<TipoSeguro, double> ValorPorSeguro = new()
         {
-                {TipoSeguro.Basico,new List<string>(){"Vidros", "Assitencia 24h" } },
-                {TipoSeguro.Intermdiario,new List<string>(){"Vidros", "Assitencia 24h", "Colisão", "Roubo e furto(80% da tabela)" } },
-                {TipoSeguro.Total,new List<string>(){"Vidros", "Assitencia 24h", "Colisão", "Roubo e furto(100% da tabela)", "Terceiros" } },
+                {TipoSeguro.Basico, 150},
+                {TipoSeguro.Intermdiario, 300 },
+                {TipoSeguro.Total, 600},
         };
-        public static List<string> ObterCoberturaSeguro(TipoSeguro Seguro) { return CoberturaPorSeguro[Seguro]; }
+        public static double ObterValorSeguro(TipoSeguro Seguro) { return ValorPorSeguro[Seguro]; }
     }
 }
